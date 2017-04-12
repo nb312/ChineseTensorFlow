@@ -28,24 +28,28 @@
 # 占位符 placeholder
 ---
 ####使用
+```
     a=tf.placeholder(tf.float32) #未知维度
 	b=tf.placeholder(tf.float32)
 	sum=a+b
 	print(sum,{a:2,b:3})#这里并没有赋值给sum 只是确定了sum的类型以及a,b的值及类型
+```
 结果：Tensor("add:0", dtype=float32) {<tf.Tensor 'Placeholder:0' shape=<unknown> dtype=float32>: 2, <tf.Tensor 'Placeholder_1:0' shape=<unknown> dtype=float32>: 3}
 输出的还是张量 但是两个的维度未知，输出的为标量  
->
+```
         with tf.Session() as sess:
     		sum_=sess.run(sum,{a:2,b:3})#如果输入sess.run(sum)将会报错误，所以只有执行了前面的才会返回想要的值，但sum依然是张量形式的标量
     		print(sum_)
-			print(sum)
+		print(sum)
+```
 结果：5.0  
      Tensor("add:0", dtype=float32)
 ####和lambda表达式的比较
+```
     c=lambda x:x+2
     print(c(1))#输出3
 	#他们都是输入一个值 然后进行计算
-
+```
 #变量 Variables
 ```
     d=tf.Variable(3)#并没有进行初始化，只是类型的确认
