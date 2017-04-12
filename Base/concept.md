@@ -1,3 +1,4 @@
+[相关源代码concept.py](https://github.com/nb312/ChineseTensorFlow/blob/master/Base/concept.py)
 # 张量Tensor
  0维张量=标量  
  1维张量=数组  
@@ -71,4 +72,4 @@
     fixD_=tranferX(fixD)#将张量改变为数学格式
     print("fixD_=",fixD_)#fixD_= 4
 ```
-[源代码concept.py](https://github.com/nb312/ChineseTensorFlow/blob/master/Base/concept.py)
+
