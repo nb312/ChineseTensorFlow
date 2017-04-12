@@ -71,3 +71,4 @@
     fixD_=tranferX(fixD)#将张量改变为数学格式
     print("fixD_=",fixD_)#fixD_= 4
 ```
+[concept.py](https://github.com/nb312/ChineseTensorFlow/blob/master/Base/concept.py)
