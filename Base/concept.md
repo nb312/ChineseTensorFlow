@@ -58,7 +58,9 @@
 		#d_=sess.run(d)#这里就对了
 		#print(d_)#输出3
 #修改变量值
-    fixD=tf.assign(d,4)#将变量d赋值为4
+```
+    fixD=tf.assign(d,4)#将变量d赋值为4
     print("fixD=",fixD)#结果：fixD= Tensor("Assign:0", shape=(), dtype=int32_ref)
     fixD_=tranferX(fixD)#将张量改变为数学格式
     print("fixD_=",fixD_)#fixD_= 4
+```
