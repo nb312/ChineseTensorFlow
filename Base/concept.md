@@ -47,6 +47,7 @@
 	#他们都是输入一个值 然后进行计算
 
 #变量 Variables
+```
     d=tf.Variable(3)#并没有进行初始化，只是类型的确认
     print(d) #结果：Tensor("Variable/read:0", shape=(), dtype=int32) 输入的float32没有用
     with tf.Session() as sess:
@@ -57,6 +58,7 @@
 		#sess.run(init)
 		#d_=sess.run(d)#这里就对了
 		#print(d_)#输出3
+```
 #修改变量值
 ```
     fixD=tf.assign(d,4)#将变量d赋值为4
