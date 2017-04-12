@@ -27,7 +27,7 @@
 ----
 # 占位符 placeholder
 ---
-####使用
+#### 使用
 ```
     a=tf.placeholder(tf.float32) #未知维度
 	b=tf.placeholder(tf.float32)
@@ -44,13 +44,14 @@
 ```
 结果：5.0  
      Tensor("add:0", dtype=float32)
-####和lambda表达式的比较
+     
+#### 和lambda表达式的比较
 ```
     c=lambda x:x+2
     print(c(1))#输出3
 	#他们都是输入一个值 然后进行计算
 ```
-#变量 Variables
+# 变量 Variables
 ```
     d=tf.Variable(3)#并没有进行初始化，只是类型的确认
     print(d) #结果：Tensor("Variable/read:0", shape=(), dtype=int32) 输入的float32没有用
@@ -63,7 +64,7 @@
 		#d_=sess.run(d)#这里就对了
 		#print(d_)#输出3
 ```
-#修改变量值
+# 修改变量值
 ```
     fixD=tf.assign(d,4)#将变量d赋值为4
     print("fixD=",fixD)#结果：fixD= Tensor("Assign:0", shape=(), dtype=int32_ref)
