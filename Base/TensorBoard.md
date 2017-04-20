@@ -1,4 +1,4 @@
-[源码TensorBoard.python](https://github.com/nb312/ChineseTensorFlow/blob/master/Base/TensorBoard.py)
+[源码TensorBoard.py](https://github.com/nb312/ChineseTensorFlow/blob/master/Base/TensorBoard.py)
 # 如何使用TensorBoard
 >说明：tensorBoard是Tensorflow的可视化工具
 # 使用方法
